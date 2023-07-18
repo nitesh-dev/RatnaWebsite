@@ -1,75 +1,78 @@
+section {
+    margin-bottom: 48px !important;
+}
 
 /* ------------------------------------------ landing part --------------------------- */
 
-.landing{
+.landing {
     position: relative;
 }
 
-.landing .image-container img{
+.landing .image-container img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-.landing .content-holder{
-   position: absolute;
-   z-index: 1;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   padding: 0 var(--page-gapping);
+.landing .content-holder {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--page-gapping);
 
 }
 
-.landing .content-holder *{
+.landing .content-holder * {
     color: white;
 }
 
-.landing .content-holder h1{
+.landing .content-holder h1 {
     margin: 0;
     font-weight: normal;
 }
 
-.landing .content-holder h3{
+.landing .content-holder h3 {
     margin: 0;
     font-weight: normal;
 }
 
 
-.landing .content-holder h4{
+.landing .content-holder h4 {
     font-weight: normal;
     margin: 0;
 }
 
-.landing .button-container{
+.landing .button-container {
     margin: 32px 0;
     margin-bottom: 24px;
 }
 
-.landing .button-container button{
+.landing .button-container button {
     padding: 0.6rem 1.2rem;
 }
 
-.landing button.outline{
+.landing button.outline {
     border-color: white;
 
 }
 
-.landing .radio-group{
+.landing .radio-group {
     display: flex;
     gap: 0.6rem;
 }
 
-.landing .radio-container{
+.landing .radio-container {
     position: relative;
     width: 20px;
     height: 20px;
 
 }
 
-.landing .radio-container input{
+.landing .radio-container input {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -81,7 +84,7 @@
 }
 
 
-.landing .radio-container span{
+.landing .radio-container span {
     width: 100%;
     height: 100%;
     display: block;
@@ -90,7 +93,7 @@
     border-radius: 50%;
 }
 
-.landing .radio-container input:checked ~ span{
+.landing .radio-container input:checked~span {
     background-color: white;
 
 }
@@ -100,8 +103,7 @@
 
 /* ------------------ features -------------------- */
 
-
-.features>div{
+.features>div {
 
     margin: 0 var(--page-gapping);
     display: grid;
@@ -109,20 +111,20 @@
     min-height: 600px;
     gap: 1rem;
     align-items: center;
-   
+
 
 }
 
-.features .image-holder{
+.features .image-holder {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    
+
 
 }
 
-.features img.image1{
+.features img.image1 {
     position: absolute;
     width: 60%;
     height: 60%;
@@ -131,7 +133,7 @@
     object-fit: cover;
 }
 
-.features img.image2{
+.features img.image2 {
     position: absolute;
     top: 50px;
     right: 30px;
@@ -141,7 +143,7 @@
     border: 8px solid white;
 }
 
-.features img.dots-1{
+.features img.dots-1 {
     position: absolute;
     top: 0;
     left: 60px;
@@ -149,7 +151,7 @@
     height: auto;
 }
 
-.features img.dots-2{
+.features img.dots-2 {
     position: absolute;
     right: 0;
     bottom: 50px;
@@ -158,28 +160,18 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.features h3{
+.features h3 {
     margin: 0;
 }
 
-.features .content{
+.features .content {
     display: grid;
     grid-template-columns: max-content auto;
     gap: 1.2rem;
     margin-top: 1rem;
 }
 
-.features .content>div:first-child{
+.features .content>div:first-child {
     background-color: var(--color-primary);
     aspect-ratio: 1/1;
     display: flex;
@@ -188,6 +180,60 @@
     padding: 8px;
 }
 
-.features .content img{
+.features .content img {
     width: 24px;
+}
+
+
+
+
+
+
+/* ------------------- facilities  ------------------- */
+
+.facility {
+    margin: 32px var(--page-gapping);
+}
+
+.facility h2 {
+    text-align: center;
+}
+
+.facility>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.facility .card {
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+}
+
+.facility .card>div{
+    max-width: 300px;
+}
+
+.facility .card>img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.facility .card>div img{
+    width: 70px;
+}
+
+
+.facility .card h4 {
+    margin: 0;
 }
