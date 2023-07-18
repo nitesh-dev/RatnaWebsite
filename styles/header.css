@@ -24,6 +24,6 @@ header .nav-content{
 header a{
     text-decoration: none;
     color: var(--color-on-surface);
-    font-size: var(--medium-font);
+    font-size: var(--small-2-font);
     font-weight: bold;
 }

@@ -94,3 +94,100 @@
     background-color: white;
 
 }
+
+
+
+
+/* ------------------ features -------------------- */
+
+
+.features>div{
+
+    margin: 0 var(--page-gapping);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 600px;
+    gap: 1rem;
+    align-items: center;
+   
+
+}
+
+.features .image-holder{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.features img.image1{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.features img.image2{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border: 8px solid white;
+}
+
+.features img.dots-1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 200px;
+    height: auto;
+}
+
+.features img.dots-2{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.features h3{
+    margin: 0;
+}
+
+.features .content{
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.features .content>div:first-child{
+    background-color: var(--color-primary);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.features .content img{
+    width: 24px;
+}
