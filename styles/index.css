@@ -260,7 +260,7 @@ section {
     translate: -50% 0;
 }
 
-.exclusive-home .content{
+.exclusive-home .content {
     position: absolute;
     top: 0;
     width: 100%;
@@ -280,11 +280,83 @@ section {
     height: 400px;
 }
 
-.exclusive-home .page h1{
+.exclusive-home .page h1 {
     margin: 0;
     margin-top: 1.5em;
 }
 
-.exclusive-home .page h4{
+.exclusive-home .page h4 {
     opacity: 0.6;
+}
+
+
+
+
+/* --------------------- about section -------------- */
+
+.about {
+    background-color: #E8F0FF;
+    min-height: 400px;
+    position: relative;
+}
+
+.about>img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+.about .page {
+    padding: 40px var(--page-gapping);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about .page img {
+    width: 100%;
+    display: block;
+}
+
+
+.about .content{
+    border-left: 4px solid #BED5FD;
+}
+
+
+.about .content>div{
+    position: relative;
+    padding-left: 60px;
+
+}
+.about .image-holder{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: -50% -10%;
+    background-color: var(--color-primary);
+    border: 4px solid #BED5FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about .image-holder img{
+   width: 24px;
+   display: block;
+}
+
+.about .content h3{
+    margin: 0 !important;
+}
+
+.about .content p{
+    margin-top: 0px !important;
+    margin-bottom: 32px;
+    line-height: 1.4;
 }
