@@ -360,3 +360,49 @@ section {
     margin-bottom: 32px;
     line-height: 1.4;
 }
+
+
+
+
+/* ---------------------- retail section -------------- */
+
+
+
+.retail .page{
+    padding: 0 var(--page-gapping);
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.retail .page>img{
+    position: absolute;
+    width: calc(100% - 2 * var(--page-gapping));
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.retail .content *{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.retail .content h2{
+    margin: 0;
+}
+
+.retail .content hr{
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100px;
+    opacity: 0.6;
+}
+.retail .content button{
+    display: block;
+    margin: auto;
+}
