@@ -218,22 +218,73 @@ section {
     aspect-ratio: 1/1;
 }
 
-.facility .card>div{
+.facility .card>div {
     max-width: 300px;
 }
 
-.facility .card>img{
+.facility .card>img {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-.facility .card>div img{
+.facility .card>div img {
     width: 70px;
 }
 
 
 .facility .card h4 {
     margin: 0;
+}
+
+
+
+/* -------------------- exclusive-home ------------------- */
+
+.exclusive-home {
+    min-height: 500px;
+    position: relative;
+}
+
+.exclusive-home .clip-background {
+    background-color: #C8D0DD;
+    height: 400px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.exclusive-home .clip-background img {
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.exclusive-home .content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.exclusive-home .content .page {
+    position: relative;
+    height: 500px;
+    padding: 0 var(--page-gapping);
+}
+
+.exclusive-home .content .page img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 400px;
+}
+
+.exclusive-home .page h1{
+    margin: 0;
+    margin-top: 1.5em;
+}
+
+.exclusive-home .page h4{
+    opacity: 0.6;
 }
