@@ -1,0 +1,13 @@
+.about{
+    padding: 0 var(--page-gapping);
+}
+
+.about ol{
+    padding: 0;
+    padding-left: var(--page-gapping);
+}
+
+.about li{
+    margin: 24px 0;
+    font-size: var(--medium-font);
+}
