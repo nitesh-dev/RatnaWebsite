@@ -20,14 +20,34 @@
     <header>
         <div class="page">
             <img src="./images/ratna-logo.png" alt="ratna image">
-            <div class="nav-content">
+            <div class="nav-content desktop">
                 <a href="#">PROJECTS</a>
                 <a href="#">ABOUT US</a>
                 <a href="#">EMAIL CALCULATOR</a>
                 <a href="#">INVESTMENT RELATION</a>
                 <a href="#">CHANNEL PARTNER</a>
             </div>
-            <button class="primary">CONTACT US</button>
+            <button class="desktop primary">CONTACT US</button>
+
+            <button onclick="toggleNav()" class="nav-button" class="phone">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM2 18a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 11a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z"
+                         />
+                </svg>
+            </button>
+        </div>
+        <div class="nav-phone" onclick="toggleNav()">
+            <div>
+                <div class="nav-content">
+                    <a href="#">PROJECTS</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">EMAIL CALCULATOR</a>
+                    <a href="#">INVESTMENT RELATION</a>
+                    <a href="#">CHANNEL PARTNER</a>
+                </div>
+                <button class="primary">CONTACT US</button>
+            </div>
         </div>
     </header>
 
@@ -77,6 +97,7 @@
                             fill="#ffffff" />
                     </svg>
                 </button>
+
             </div>
         </div>
     </section>

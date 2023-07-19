@@ -9,6 +9,8 @@ footer .left{
     left: 0;
     bottom: 0;
     height: 250px;
+    width: 120px;
+    height: auto;
 }
 
 footer .right{
