@@ -9,6 +9,7 @@
     --color-surface: white;
     --color-on-surface: #313D48;
     --color-primary: #1669F6;
+    --color-primary-dark: #014dd1;
     --color-on-primary: white;
     --medium-font: 16px;
     --small-2-font: 14px;
@@ -70,6 +71,12 @@ button.primary {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
     border: 1px solid var(--color-primary);
+    transition: all 200ms;
+}
+
+button.primary:hover {
+    background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
 }
 
 button.outline {
