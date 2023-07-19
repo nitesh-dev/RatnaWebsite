@@ -433,3 +433,14 @@ section {
     display: block;
     margin: auto;
 }
+
+
+@media only screen and (max-width: 800px) {
+    /* .desktop {
+        display: none !important;
+    }
+
+    .phone{
+        display: block;
+    } */
+}
