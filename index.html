@@ -32,8 +32,7 @@
             <button onclick="toggleNav()" class="nav-button phone">
                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM2 18a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 11a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z"
-                         />
+                        d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM2 18a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 11a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z" />
                 </svg>
             </button>
         </div>
@@ -307,69 +306,110 @@
                 <button class="primary">VIEW ALL</button>
             </div>
 
-            <div class="testimonial-holder">
-                <div class="card">
-                    <div class="heading">
-                        <img src="./images/profiles/profile1.png" alt="Andraw D.Smith">
-                        <div>
-                            <h4>Andraw D.Smith</h4>
-                            <p>Manager</p>
+            <div class="testimonial-container">
+                <div class="testimonial-holder">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="heading">
+                                <img src="./images/profiles/profile1.png" alt="Andraw D.Smith">
+                                <div>
+                                    <h4>Andraw D.Smith</h4>
+                                    <p>Manager</p>
+                                </div>
+                            </div>
+
+                            <p>“Factory companies play a cital role in the global economy by producing that are by
+                                pepople
+                                around the world. they also face challenges related to labor”
+                            </p>
+
+                            <hr>
+                            <div class="bottom">
+                                <img src="./images/ratna-logo.png" alt="logo">
+                                <img src="./images/icons/quote-icon.png" alt="quote-icon">
+                            </div>
+
+                            <img src="./images/outline/dot-shapes.png">
                         </div>
                     </div>
 
-                    <p>“Factory companies play a cital role in the global economy by producing that are by pepople
-                        around the world. they also face challenges related to labor”
-                    </p>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="heading">
+                                <img src="./images/profiles/profile2.png" alt="Andraw D.Smith">
+                                <div>
+                                    <h4>Andraw D.Smith</h4>
+                                    <p>Manager</p>
+                                </div>
+                            </div>
 
-                    <hr>
-                    <div class="bottom">
-                        <img src="./images/ratna-logo.png" alt="logo">
-                        <img src="./images/icons/quote-icon.png" alt="quote-icon">
+                            <p>“Factory companies play a cital role in the global economy by producing that are by
+                                pepople
+                                around the world. they also face challenges related to labor”
+                            </p>
+
+                            <hr>
+                            <div class="bottom">
+                                <img src="./images/ratna-logo.png" alt="logo">
+                                <img src="./images/icons/quote-icon.png" alt="quote-icon">
+                            </div>
+                            <img src="./images/outline/dot-shapes.png">
+                        </div>
                     </div>
 
-                    <img src="./images/outline/dot-shapes.png">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="heading">
+                                <img src="./images/profiles/profile3.png" alt="Andraw D.Smith">
+                                <div>
+                                    <h4>Andraw D.Smith</h4>
+                                    <p>Manager</p>
+                                </div>
+                            </div>
+
+                            <p>“Factory companies play a cital role in the global economy by producing that are by
+                                pepople
+                                around the world. they also face challenges related to labor”
+                            </p>
+
+                            <hr>
+                            <div class="bottom">
+                                <img src="./images/ratna-logo.png" alt="logo">
+                                <img src="./images/icons/quote-icon.png" alt="quote-icon">
+                            </div>
+                            <img src="./images/outline/dot-shapes.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="left" onclick="testimonialSlide(-1)">
+                    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12l7.852-8.313Z" />
+                    </svg>
+                </div>
+                <div class="right" onclick="testimonialSlide(-2)">
+                    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12l-7.852-8.313Z" />
+                    </svg>
                 </div>
 
-                <div class="card">
-                    <div class="heading">
-                        <img src="./images/profiles/profile2.png" alt="Andraw D.Smith">
-                        <div>
-                            <h4>Andraw D.Smith</h4>
-                            <p>Manager</p>
-                        </div>
+                <div class="radio-group">
+                    <div class="radio-container">
+                        <input type="radio" checked name="testimonial" value="0" onclick="testimonialSlide(0)">
+                        <span></span>
                     </div>
 
-                    <p>“Factory companies play a cital role in the global economy by producing that are by pepople
-                        around the world. they also face challenges related to labor”
-                    </p>
-
-                    <hr>
-                    <div class="bottom">
-                        <img src="./images/ratna-logo.png" alt="logo">
-                        <img src="./images/icons/quote-icon.png" alt="quote-icon">
-                    </div>
-                    <img src="./images/outline/dot-shapes.png">
-                </div>
-
-                <div class="card">
-                    <div class="heading">
-                        <img src="./images/profiles/profile3.png" alt="Andraw D.Smith">
-                        <div>
-                            <h4>Andraw D.Smith</h4>
-                            <p>Manager</p>
-                        </div>
+                    <div class="radio-container">
+                        <input type="radio" name="testimonial" value="1" onclick="testimonialSlide(1)">
+                        <span></span>
                     </div>
 
-                    <p>“Factory companies play a cital role in the global economy by producing that are by pepople
-                        around the world. they also face challenges related to labor”
-                    </p>
-
-                    <hr>
-                    <div class="bottom">
-                        <img src="./images/ratna-logo.png" alt="logo">
-                        <img src="./images/icons/quote-icon.png" alt="quote-icon">
+                    <div class="radio-container">
+                        <input type="radio" name="testimonial" value="2" onclick="testimonialSlide(2)">
+                        <span></span>
                     </div>
-                    <img src="./images/outline/dot-shapes.png">
+
                 </div>
             </div>
 
@@ -458,6 +498,7 @@
     </footer>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/testimonial.js"></script>
 </body>
 
 </html>

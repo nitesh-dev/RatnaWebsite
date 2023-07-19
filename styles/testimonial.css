@@ -9,10 +9,15 @@
     gap: 2rem;
 }
 
+.testimonial .testimonial-container{
+    overflow-x: auto;
+    position: relative;
+}
 .testimonial .testimonial-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    /* translate: -50% 0; */
+    transition: translate 500ms;
 }
 
 .testimonial .card {
@@ -20,11 +25,12 @@
     border-radius: 8px;
     padding: 16px;
     padding-bottom: 0px;
-    margin-bottom: 24px;
+    margin: 24px 12px;
+    overflow: auto;
     position: relative;
 }
 
-.testimonial .card>img{
+.testimonial .card>img {
     position: absolute;
     top: 0;
     right: 0;
@@ -58,7 +64,7 @@
     line-height: 1;
 }
 
-.testimonial hr{
+.testimonial hr {
     border: none;
     border-top: 1px solid #dfeafd;
 }
@@ -70,29 +76,123 @@
     align-items: center;
 }
 
-.testimonial .bottom img{
+.testimonial .bottom img {
     height: 24px;
 }
 
-.testimonial .card>p{
+.testimonial .card>p {
     margin: 1.5em 0;
 }
 
+.testimonial .left, .testimonial .right{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background-color: #b3cfff;
+    translate: 0 -50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .left:hover, .testimonial .right:hover{
+    background-color: #5a97ff;
+}
+
+.testimonial .left svg, .testimonial .right svg{
+    fill: #0044b9;
+    width: 16px;
+}
+
+.testimonial .left{
+    left: 0;
+    display: none;
+}
+
+.testimonial .right{
+    right: 0;
+    display: none;
+}
+
+
+.testimonial .radio-group {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    display: none;
+}
+
+.testimonial .radio-container {
+    position: relative;
+    width: 12px;
+    height: 12px;
+
+}
+
+.testimonial .radio-container input {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+}
+
+
+.testimonial .radio-container span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.testimonial .radio-container input:checked~span {
+    background-color: var(--color-primary);
+
+}
 
 
 
-@media only screen and (max-width: 800px) {
+
+
+@media only screen and (max-width: 850px) {
 
     .testimonial .testimonial-holder {
         grid-template-columns: 1fr 1fr;
+        translate: 0 0;
     }
-    
+
 }
 
 @media only screen and (max-width: 600px) {
-    
-    .testimonial .testimonial-holder {
-        grid-template-columns: 1fr;
-    }
-}
 
+    .testimonial .testimonial-container{
+        overflow-x: hidden;
+
+    }
+    .testimonial .testimonial-holder {
+        display: flex;
+        
+    }
+
+    .testimonial  .card-holder {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .testimonial .left, .testimonial .right{
+        display: flex;
+    }
+    
+    
+    .testimonial .radio-group {
+        display: flex;
+    }
+
+}
