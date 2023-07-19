@@ -2,6 +2,7 @@ footer{
     min-height: 400px;
     background-color: #C8D0DD;
     position: relative;
+    overflow-y: auto;
 }
 
 footer .left{
@@ -11,6 +12,11 @@ footer .left{
     height: 250px;
     width: 120px;
     height: auto;
+}
+
+footer .content img{
+    height: 42px;
+    width: auto;
 }
 
 footer .right{
@@ -65,6 +71,15 @@ footer .contact a{
 
 footer .contact svg{
     width: 24px;
+}
+
+footer hr{
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+footer>p{
+    text-align: center;
 }
 
 
