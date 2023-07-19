@@ -78,3 +78,21 @@
     margin: 1.5em 0;
 }
 
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .testimonial .testimonial-holder {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .testimonial .testimonial-holder {
+        grid-template-columns: 1fr;
+    }
+}
+
