@@ -7,7 +7,17 @@
     padding-left: var(--page-gapping);
 }
 
+.about h2{
+    margin-bottom: 0;
+}
+
+.about hr{
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
 .about li{
     margin: 24px 0;
     font-size: var(--medium-font);
+    color: rgb(58, 58, 58);
 }

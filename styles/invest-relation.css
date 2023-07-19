@@ -1,0 +1,29 @@
+.investment{
+    padding: 0 var(--page-gapping);
+}
+
+.investment h2{
+    margin-bottom: 0;
+}
+
+.investment hr{
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.investment button{
+    border: 1px solid rgb(216, 216, 216);
+    display: grid;
+    grid-template-columns: auto max-content;
+    width: 100%;
+    text-align: left;
+    margin: 12px 0;
+    background-color: #F6F6F9;
+    color: rgb(59, 59, 59);
+}
+
+.investment button svg{
+    width: 24px;
+    height: 24px;
+    fill: rgb(95, 95, 95);
+}
