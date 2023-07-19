@@ -28,6 +28,10 @@ header a {
     font-weight: bold;
 }
 
+header a.active{
+    color: var(--color-primary);
+}
+
 header .nav-phone>div {
     width: 300px;
     position: fixed;
