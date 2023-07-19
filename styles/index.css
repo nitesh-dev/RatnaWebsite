@@ -8,10 +8,37 @@ section {
     position: relative;
 }
 
-.landing .image-container img {
+.landing .image-container{
     width: 100%;
     height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing .image-container>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    translate: 0 0;
+    transition: translate 500ms;
+
+
+}
+.landing .image-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    flex-shrink: 0;
+}
+
+.landing .slide-button{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    translate: 0 -50%;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .landing .content-holder {

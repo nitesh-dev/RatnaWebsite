@@ -33,8 +33,12 @@
 
     <!-- landing -->
     <section class="landing">
-        <div class="image-container">
-            <img src="./images/backround.png" alt="">
+        <div class="image-container" id="landing-slideshow">
+            <div>
+                <img src="./images/backround.png">
+                <img src="./images/city.png">
+                <img src="./images/backround.png">
+            </div>
         </div>
 
         <div class="content-holder">
@@ -50,21 +54,29 @@
 
                 <div class="radio-group">
                     <div class="radio-container">
-                        <input type="radio" checked name="landing">
+                        <input type="radio" checked name="landing" value="0" onclick="landingSlide(0)">
                         <span></span>
                     </div>
 
                     <div class="radio-container">
-                        <input type="radio" name="landing">
+                        <input type="radio" name="landing" value="1" onclick="landingSlide(1)">
                         <span></span>
                     </div>
 
                     <div class="radio-container">
-                        <input type="radio" name="landing">
+                        <input type="radio" name="landing" value="2" onclick="landingSlide(2)">
                         <span></span>
                     </div>
 
                 </div>
+
+                <button class="slide-button" onclick="landingSlide()">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12l-7.852-8.313Z"
+                            fill="#ffffff" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -410,13 +422,18 @@
                 </a>
 
                 <a href="mailto:Sales@ratnagroup.co.in">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.57"><path d="M3.8,0,62.48,47.85,118.65,0ZM0,80.52,41.8,38.61,0,4.53v76ZM46.41,42.37,3.31,85.57h115.9L78,42.37,64.44,53.94h0a3,3,0,0,1-3.78.05L46.41,42.37Zm36.12-3.84,40.35,42.33V4.16L82.53,38.53Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.57">
+                        <path
+                            d="M3.8,0,62.48,47.85,118.65,0ZM0,80.52,41.8,38.61,0,4.53v76ZM46.41,42.37,3.31,85.57h115.9L78,42.37,64.44,53.94h0a3,3,0,0,1-3.78.05L46.41,42.37Zm36.12-3.84,40.35,42.33V4.16L82.53,38.53Z" />
+                    </svg>
                     <span>Sales@ratnagroup.co.in</span>
                 </a>
             </div>
 
         </div>
     </footer>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
