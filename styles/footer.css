@@ -1,0 +1,61 @@
+footer{
+    min-height: 400px;
+    background-color: #C8D0DD;
+    position: relative;
+}
+
+footer .left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 250px;
+}
+
+footer .right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+}
+
+footer .content{
+    padding: 80px var(--page-gapping);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+footer .icon-container{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.8em;
+}
+
+footer svg{
+    fill: #1F4C99;
+    width: 32px;
+    height: 32px;
+}
+
+footer h4{
+    margin-top: 0;
+}
+
+footer a{
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.6em;
+}
+
+footer .contact a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+footer .contact svg{
+    width: 24px;
+}
+
