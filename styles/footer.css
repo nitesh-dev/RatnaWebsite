@@ -49,6 +49,12 @@ footer a{
     margin-bottom: 0.6em;
 }
 
+footer a:hover{
+    color: rgb(2, 2, 2);
+    text-decoration: underline;
+
+}
+
 footer .contact a{
     display: flex;
     align-items: center;
