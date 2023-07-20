@@ -20,7 +20,7 @@ function testimonialSlide(value = -1) {
     if (testimonialSlideIndex < 0 ) testimonialSlideIndex = testimonialSlideshow.children.length - 1
 
     // translating
-    testimonialSlideshow.style.translate = `${testimonialSlideIndex * -100}% 0`;
+    testimonialSlideshow.style.transform = `translate( ${testimonialSlideIndex * -100}%, 0)`;
 
     // making radio checked
     testimonialRadioItems[testimonialSlideIndex].checked = true

@@ -28,7 +28,7 @@ header a {
     font-weight: bold;
 }
 
-header a.active{
+header a.active {
     color: var(--color-primary);
 }
 
@@ -41,8 +41,8 @@ header .nav-phone>div {
     z-index: 3;
     top: 0;
     padding: 36px 24px;
-    translate: 100% 0;
-    transition: translate 300ms;
+    transform: translate(100%, 0);
+    transition: transform 300ms;
 }
 
 header .nav-phone .nav-content {
@@ -71,14 +71,14 @@ header .nav-show {
 }
 
 header .nav-show>div {
-    translate: 0 0;
+    transform: translate(0, 0);
 }
 
 header .nav-phone * {
     color: white;
 }
 
-.nav-button{
+.nav-button {
     padding: 0;
     background-color: transparent;
     display: none;
@@ -86,16 +86,16 @@ header .nav-phone * {
     transition: all 200ms;
 }
 
-.nav-button svg{
+.nav-button svg {
     fill: rgb(0, 2, 95);
 }
 
-.nav-button:hover{
+.nav-button:hover {
     scale: 1.2;
 }
 
 @media only screen and (max-width: 1000px) {
-    .nav-button{
+    .nav-button {
         display: flex !important;
     }
 }

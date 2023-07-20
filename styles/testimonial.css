@@ -1,4 +1,3 @@
-
 .testimonial .page>.heading {
     display: flex;
     justify-content: space-between;
@@ -7,17 +6,18 @@
     padding: 0 var(--page-gapping);
 }
 
-.testimonial .testimonial-container{
+.testimonial .testimonial-container {
     overflow-x: auto;
     position: relative;
     padding-left: var(--page-gapping);
     padding-right: var(--page-gapping);
 }
+
 .testimonial .testimonial-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* translate: -50% 0; */
-    transition: translate 500ms;
+    /* transform: -50% 0; */
+    transition: transform 500ms;
 }
 
 .testimonial .card {
@@ -84,34 +84,37 @@
     margin: 1.5em 0;
 }
 
-.testimonial .left, .testimonial .right{
+.testimonial .left,
+.testimonial .right {
     position: absolute;
     top: 50%;
     z-index: 2;
     width: 30px;
     height: 30px;
     background-color: #b3cfff;
-    translate: 0 -50%;
+    transform: translate(0, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.testimonial .left:hover, .testimonial .right:hover{
+.testimonial .left:hover,
+.testimonial .right:hover {
     background-color: #5a97ff;
 }
 
-.testimonial .left svg, .testimonial .right svg{
+.testimonial .left svg,
+.testimonial .right svg {
     fill: #0044b9;
     width: 16px;
 }
 
-.testimonial .left{
+.testimonial .left {
     left: calc(var(--page-gapping) - 4px);
     display: none;
 }
 
-.testimonial .right{
+.testimonial .right {
     right: calc(var(--page-gapping) - 4px);
     display: none;
 }
@@ -165,32 +168,34 @@
 
     .testimonial .testimonial-holder {
         grid-template-columns: 1fr 1fr;
-        translate: 0 0;
+        transform: translate(0, 0);
     }
 
 }
 
 @media only screen and (max-width: 600px) {
 
-    .testimonial .testimonial-container{
+    .testimonial .testimonial-container {
         overflow-x: hidden;
 
     }
+
     .testimonial .testimonial-holder {
         display: flex;
-        
+
     }
 
-    .testimonial  .card-holder {
+    .testimonial .card-holder {
         flex-shrink: 0;
         width: 100%;
     }
 
-    .testimonial .left, .testimonial .right{
+    .testimonial .left,
+    .testimonial .right {
         display: flex;
     }
-    
-    
+
+
     .testimonial .radio-group {
         display: flex;
     }
@@ -198,7 +203,7 @@
     .testimonial .page>.heading {
         justify-content: unset;
         flex-direction: column;
-        gap:0;
+        gap: 0;
     }
 
     .testimonial .page>.heading br {

@@ -23,7 +23,7 @@ function landingSlide(value = -1){
     if(landingSlideIndex * -100 < (landingSlideshow.children.length - 1) * -100) landingSlideIndex = 0
 
     // translating
-    landingSlideshow.style.translate = `${landingSlideIndex * -100}% 0`;
+    landingSlideshow.style.transform = `translate( ${landingSlideIndex * -100}%, 0)`;
 
     // making radio checked
     landingRadioItems[landingSlideIndex].checked = true
