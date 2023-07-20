@@ -26,7 +26,17 @@ let pieChart = new Chart(pieChartCanvas, {
 
 
 
+function isMobileDevice() {
+    const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Tablet/i;
+    return mobileRegex.test(navigator.userAgent);
+}
 
+
+// calculating bar width
+let barWidth = 15
+if(isMobileDevice()){
+    barWidth = 6
+}
 
 const labels = [2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034];
 
@@ -52,14 +62,14 @@ const data = {
             label: 'Principle',
             data: generateData(10000, labels.length, true),
             backgroundColor: '#1669F6',
-            barThickness: 15,
+            barThickness: barWidth,
             order: 2
         },
         {
             label: 'Interest',
             data: generateData(10000, labels.length),
             backgroundColor: '#8CABDF',
-            barThickness: 15,
+            barThickness: barWidth,
             order: 1
         },
         {
