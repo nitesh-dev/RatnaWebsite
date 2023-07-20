@@ -1,17 +1,17 @@
-.testimonial .page {
-    padding: 0 var(--page-gapping);
-}
 
 .testimonial .page>.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding: 0 var(--page-gapping);
 }
 
 .testimonial .testimonial-container{
     overflow-x: auto;
     position: relative;
+    padding-left: var(--page-gapping);
+    padding-right: var(--page-gapping);
 }
 .testimonial .testimonial-holder {
     display: grid;
@@ -107,12 +107,12 @@
 }
 
 .testimonial .left{
-    left: 0;
+    left: calc(var(--page-gapping) - 4px);
     display: none;
 }
 
 .testimonial .right{
-    right: 0;
+    right: calc(var(--page-gapping) - 4px);
     display: none;
 }
 
