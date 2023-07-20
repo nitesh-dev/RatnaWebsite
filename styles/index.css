@@ -480,7 +480,9 @@ section {
     }
 
     .exclusive-home .content .page img {
-        top: 120px;
-        height: 250px;
+        top: 200px;
+        height: 200px;
+        right: 20px
     }
+
 }
