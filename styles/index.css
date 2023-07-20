@@ -516,5 +516,9 @@ section {
         padding-top: 32px;
     }
 
+    .landing .slide-button{
+        right: 0;
 
+    }
+    
 }
