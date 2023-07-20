@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.calculator .pi-chart .content{
+.calculator .pi-chart .content {
     margin-right: 2rem;
 }
 
@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-.calculator .pi-chart canvas{
+.calculator .pi-chart canvas {
     max-height: 300px;
 }
 
@@ -149,11 +149,61 @@
 
 
 
-.calculator .chart{
+.calculator .chart {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+.calculator .status {
+    padding: 24px 0;
+    background-color: #E8F0FF;
+}
+
+.calculator .status>div {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+}
+
+.calculator .status .container {
+    height: max-content;
+    margin: auto;
+}
+
+.calculator .status h2,
+.calculator .status p {
+    margin: 0;
+    text-align: center;
+}
+
+.calculator .status span {
+    width: 1px;
+    display: block;
+    background-color: rgb(207, 207, 207);
+}
+
+
+
+/* ---------------  bar graph section ----------------- */
+
+
+.bar-graph .page {
+    padding: 0 var(--page-gapping);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,7 +214,21 @@
         grid-template-columns: 100%;
     }
 
-    .calculator .pi-chart .content{
+    .calculator .pi-chart .content {
         margin-right: 0;
     }
+
+    .calculator .status>div {
+        grid-template-columns: 100%;
+        gap: 1rem
+    }
+
+    .calculator .status span {
+        width: 90%;
+        height: 1px;
+        margin: auto;
+        display: block;
+        background-color: rgb(207, 207, 207);
+    }
+
 }
