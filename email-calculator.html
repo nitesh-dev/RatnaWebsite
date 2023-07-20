@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Email Calculator</title>
+
 
     <link href='https://fonts.googleapis.com/css?family=Taviraj' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/landing-other.css">
     <link rel="stylesheet" href="./styles/testimonial.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         <div class="page">
             <img src="./images/ratna-logo.png" alt="ratna image">
             <div class="nav-content desktop">
-                <a href="/" class="active">PROJECTS</a>
+                <a href="/">PROJECTS</a>
                 <a href="./about.html">ABOUT US</a>
                 <a href="./email-calculator.html">EMAIL CALCULATOR</a>
                 <a href="./investment-relation.html">INVESTMENT RELATION</a>
@@ -39,7 +41,7 @@
         <div class="nav-phone" onclick="toggleNav()">
             <div>
                 <div class="nav-content">
-                    <a href="/" class="active">PROJECTS</a>
+                    <a href="/">PROJECTS</a>
                     <a href="./about.html">ABOUT US</a>
                     <a href="./email-calculator.html">EMAIL CALCULATOR</a>
                     <a href="./investment-relation.html">INVESTMENT RELATION</a>
@@ -50,251 +52,41 @@
         </div>
     </header>
 
-    <!-- landing -->
-    <section class="landing">
-        <div class="image-container" id="landing-slideshow">
-            <div>
-                <img src="./images/backround.png">
-                <img src="./images/city.png">
-                <img src="./images/backround.png">
-            </div>
-        </div>
 
-        <div class="content-holder">
-            <div class="page">
-                <h3>TURQUOISE</h3>
-                <h1>GRANDEURE</h1>
-                <h4>4BHK EXCLUSIVE HOMES <br> @GODHAVI</h4>
-
-                <div class="button-container">
-                    <button class="primary">VIEW MORE</button>
-                    <button class="outline">CONTACT US</button>
-                </div>
-
-                <div class="radio-group">
-                    <div class="radio-container">
-                        <input type="radio" checked name="landing" value="0" onclick="landingSlide(0)">
-                        <span></span>
-                    </div>
-
-                    <div class="radio-container">
-                        <input type="radio" name="landing" value="1" onclick="landingSlide(1)">
-                        <span></span>
-                    </div>
-
-                    <div class="radio-container">
-                        <input type="radio" name="landing" value="2" onclick="landingSlide(2)">
-                        <span></span>
-                    </div>
-
-                </div>
-
-                <button class="slide-button" onclick="landingSlide()">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11.273 3.687a1 1 0 1 1 1.454-1.374l8.5 9a1 1 0 0 1 0 1.374l-8.5 9.001a1 1 0 1 1-1.454-1.373L19.125 12l-7.852-8.313Z"
-                            fill="#ffffff" />
-                    </svg>
-                </button>
-
-            </div>
-        </div>
+    <!-- landing section -->
+    <section class="landing-other">
+        <img src="./images/landing.png" alt="building">
+        <h1>CONTACT US</h1>
     </section>
 
-
-    <!-- features section -->
-    <section class="page features">
-        <div>
-            <div class="image-holder">
-
-                <img class="dots-1" src="./images/dots.png">
-                <img class="dots-2" src="./images/dots.png">
-
-                <img class="image1" src="./images/image2.png">
-                <img class="image2" src="./images/image1.png">
-            </div>
-            <div class="content-holder">
-                <div class="content">
-                    <div><img src="./images/icons/smile-icon.png" alt="smile"></div>
-                    <div>
-                        <h3>Happiness</h3>
-                        <p>Your happines is our happiness and we constantly strive that you achieve this in all the
-                            experience with us!</p>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div><img src="./images/icons/family-icon.png" alt="family-icon"></div>
-                    <div>
-                        <h3>Family</h3>
-                        <p>We consider all our clients as a part of one big family. Our interest is always in taking
-                            care of you in every way we can.</p>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div><img src="./images/icons/idea-icon.png" alt="Innovation"></div>
-                    <div>
-                        <h3>Innovation</h3>
-                        <p>Leveraging the latest development in real estate, solaris’ projects are the pinnacle of
-                            design and innovation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- facilities section -->
-
-    <section class="page">
-        <div class="facility">
-            <h2>Our Facilities</h2>
-            <div>
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/appliances-icon.png">
-                        <h4>Lux Appliances</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/wifi.png">
-                        <h4>Fast Wi-Fi</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/swimming.png">
-                        <h4>Swimming Pool</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/parking.png">
-                        <h4>Parking Place</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/fire.png">
-                        <h4>Fireplace</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img src="./images/icons/gym-icon.png">
-                        <h4>Gym & Fitness</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <img src="./images/outline/light-homes.png">
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- exclusive home section -->
-    <section class="exclusive-home">
-
-        <div class="background">
-            <div class="clip-background">
-                <img src="./images/r-image.png">
-            </div>
-            <div class="content">
-                <div class="page">
-                    <h1>TURQUOISE</h1>
-                    <h4>3 BHK EXCLUSIVE HOMES <br>@GODHAVI</h4>
-                    <button class="primary">VIEW MORE</button>
-                    <img src="./images/building-image.png">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <!-- about section  -->
-    <section class="about">
+    <!-- about us section -->
+    <section class="contact-us">
         <div class="page">
-            <img src="./images/building.png">
-            <div class="content">
+            <form>
+                <h2>Contact Us</h2>
+                <p>Feel free to ask any construction or architectural questions over the phone, or get in touch via our
+                    contact form below. Your message will be dispatched directly to our staff who will answer as soon as
+                    they can
+                </p>
                 <div>
-                    <h3>TRUST</h3>
-                    <p>Trust is the key to any relationship and we do our best to take decision that will benifit you!
-                    </p>
-
-                    <div class="image-holder">
-                        <img src="./images/icons/trust.png" alt="trust">
-                    </div>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
                 </div>
-
                 <div>
-                    <h3>QUALITY</h3>
-                    <p>We promise you to deliver you the best quality, be it design, location material, or finishes in
-                        our work</p>
-
-                    <div class="image-holder">
-                        <img src="./images/icons/trust.png" alt="trust">
-                    </div>
+                    <input type="text" placeholder="Phone Number">
+                    <select>
+                        <option selected>Select Option</option>
+                        <option value="Android">Android</option>
+                        <option value="Web">Web</option>
+                        <option value="ios">IOS</option>
+                    </select>
                 </div>
-
-                <div>
-                    <h3>COMMITMENT</h3>
-                    <p>We are committed to deliver more than you expect from us.</p>
-
-                    <div class="image-holder">
-                        <img src="./images/icons/trust.png" alt="trust">
-                    </div>
-                </div>
-
-                <div>
-                    <h3>CLARITY</h3>
-                    <p>Our constant endeavour is to have is total transparency in all the dealings that we do with you
-                    </p>
-
-                    <div class="image-holder">
-                        <img src="./images/icons/trust.png" alt="trust">
-                    </div>
-                </div>
-            </div>
-
+                <textarea placeholder="Comment"></textarea>
+                <button type="submit" class="primary">CONTACT US</button>
+            </form>
+            <img src="./images/outline/rough-house.png" alt="rough-house">
         </div>
-        <img src="./images/outline/house.png">
-    </section>
 
-
-
-    <!-- retail section -->
-    <section class="retail">
-        <div class="page">
-            <img src="./images/city.png" alt="city">
-            <div class="content">
-                <h2>TURQUOISE 4</h2>
-                <hr>
-                <h4>RETAIL & Commercial Spaces</h4>
-                <button class="primary">VIEW MORE</button>
-            </div>
-        </div>
     </section>
 
 
@@ -497,9 +289,12 @@
         <p>© 2020 Ratna Group All rights reserved</p>
     </footer>
 
-    <script src="./scripts/index.js"></script>
+
+
+
     <script src="./scripts/header.js"></script>
     <script src="./scripts/testimonial.js"></script>
+
 </body>
 
 </html>
