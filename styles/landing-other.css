@@ -22,4 +22,6 @@
 .landing-other h1{
     color: white;
     font-weight: normal;
+    margin: 0 24px;
+    text-align: center;
 }
