@@ -130,6 +130,11 @@ button.outline {
     :root{
         --page-gapping: 16px;
     }
+
+    button {
+        border: none;
+        padding: 0.6rem 1rem;
+    }
     
 }
 
@@ -158,6 +163,11 @@ button.outline {
 
     :root{
         --page-gapping: 12px;
+    }
+
+    button {
+        border: none;
+        padding: 0.5rem 0.9rem;
     }
     
 }

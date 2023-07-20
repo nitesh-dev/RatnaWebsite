@@ -485,4 +485,10 @@ section {
         right: 20px
     }
 
+    .landing .radio-container {
+        width: 16px;
+        height: 16px;
+    
+    }
+
 }
