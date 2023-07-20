@@ -278,6 +278,7 @@ section {
 .exclusive-home {
     min-height: 500px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .exclusive-home .clip-background {
