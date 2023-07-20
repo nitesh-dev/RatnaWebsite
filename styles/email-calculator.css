@@ -233,11 +233,12 @@ table thead{
 table td {
     text-align: center;
     word-break: keep-all;
+    color: rgb(71, 71, 71);
 }
 
 table td,
 table th {
-    padding: 8px;
+    padding: 12px;
     font-size: 14px;
     white-space: pre;
 }
