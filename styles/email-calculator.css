@@ -30,9 +30,13 @@
 
 .calculator .pi-chart {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 60% 40%;
     margin: 40px 0;
+    align-items: center;
+}
+
+.calculator .pi-chart .content{
+    margin-right: 2rem;
 }
 
 
@@ -46,6 +50,10 @@
     display: block;
     padding: 0;
     width: 100%;
+}
+
+.calculator .pi-chart canvas{
+    max-height: 300px;
 }
 
 
@@ -137,4 +145,26 @@
 
 .calculator .switch input:checked~div .right {
     background-color: #e9e9e9;
+}
+
+
+
+.calculator .chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .calculator .pi-chart {
+        grid-template-columns: 100%;
+    }
+
+    .calculator .pi-chart .content{
+        margin-right: 0;
+    }
 }
