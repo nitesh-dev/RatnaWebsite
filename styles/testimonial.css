@@ -195,4 +195,14 @@
         display: flex;
     }
 
+    .testimonial .page>.heading {
+        justify-content: unset;
+        flex-direction: column;
+        gap:0;
+    }
+
+    .testimonial .page>.heading br {
+        display: none;
+    }
+
 }
