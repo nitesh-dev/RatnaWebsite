@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/landing-other.css">
     <link rel="stylesheet" href="./styles/testimonial.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/email-calculator.css">
 </head>
 
 <body>
@@ -56,35 +56,59 @@
     <!-- landing section -->
     <section class="landing-other">
         <img src="./images/landing.png" alt="building">
-        <h1>CONTACT US</h1>
+        <h1>EMAIL CALCULATOR</h1>
     </section>
 
-    <!-- about us section -->
-    <section class="contact-us">
+    <!-- calculator section -->
+    <section class="calculator">
         <div class="page">
-            <form>
-                <h2>Contact Us</h2>
-                <p>Feel free to ask any construction or architectural questions over the phone, or get in touch via our
-                    contact form below. Your message will be dispatched directly to our staff who will answer as soon as
-                    they can
-                </p>
-                <div>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+            <h2>EMAIL CALCULATOR</h2>
+            <hr>
+            <div class="pi-chart">
+                <div class="content">
+
+                    <!-- 1 -->
+                    <div class="input-container">
+                        <span>Home Loan Amount</span>
+                        <div class="inner-input">
+                            <span>50000</span>
+                            <input type="range">
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="input-container">
+                        <span>Interest Rate</span>
+                        <div class="inner-input">
+                            <span>10</span>
+                            <input type="range">
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="input-container">
+                        <span>Loan Tenure</span>
+                        <div class="inner-input">
+                            <div class="grid">
+                                <span>20</span>
+
+                                <div class="switch">
+                                    <input type="checkbox">
+                                    <div>
+                                        <span class="left">Yr</span>
+                                        <span class="right">Mo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="range">
+                        </div>
+                    </div>
+
                 </div>
-                <div>
-                    <input type="text" placeholder="Phone Number">
-                    <select>
-                        <option selected>Select Option</option>
-                        <option value="Android">Android</option>
-                        <option value="Web">Web</option>
-                        <option value="ios">IOS</option>
-                    </select>
+                <div class="chart">
+                    sdfa
                 </div>
-                <textarea placeholder="Comment"></textarea>
-                <button type="submit" class="primary">CONTACT US</button>
-            </form>
-            <img src="./images/outline/rough-house.png" alt="rough-house">
+            </div>
         </div>
 
     </section>
@@ -294,6 +318,7 @@
 
     <script src="./scripts/header.js"></script>
     <script src="./scripts/testimonial.js"></script>
+    <script src="./scripts/email-calculator.js"></script>
 
 </body>
 
