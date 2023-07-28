@@ -575,5 +575,9 @@ section {
         right: 0;
 
     }
+
+    .retail .image-holder img{
+        width: 250px;
+    }
     
 }
