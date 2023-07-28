@@ -15,6 +15,16 @@ let pieChart = new Chart(pieChartCanvas, {
         }]
     },
     options: {
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom',
+                title: 'hello',
+                labels: {
+                    
+                }
+            }
+        }
         // scales: {
         //     y: {
         //         beginAtZero: true
@@ -34,7 +44,7 @@ function isMobileDevice() {
 
 // calculating bar width
 let barWidth = 15
-if(isMobileDevice()){
+if (isMobileDevice()) {
     barWidth = 6
 }
 
