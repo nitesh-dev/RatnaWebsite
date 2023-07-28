@@ -25,3 +25,10 @@
     margin: 0 24px;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .landing-other{
+        height: 300px;
+    }
+}
