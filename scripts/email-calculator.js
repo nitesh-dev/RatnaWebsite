@@ -1,4 +1,23 @@
 
+const allInputs = document.querySelectorAll('.pi-chart .inner-input')
+allInputs.forEach(element => {
+    element.lastElementChild.addEventListener('input', onInputChange)
+});
+
+function onInputChange(event) {
+
+    let progressElement = event.target.parentElement.firstElementChild
+    progressElement.style.width = event.target.value + '%'
+}
+
+
+
+
+
+
+
+
+
 let pieChartCanvas = document.querySelector('#pie-chart')
 
 let pieChart = new Chart(pieChartCanvas, {
@@ -21,7 +40,7 @@ let pieChart = new Chart(pieChartCanvas, {
                 position: 'bottom',
                 title: 'hello',
                 labels: {
-                    
+
                 }
             }
         }

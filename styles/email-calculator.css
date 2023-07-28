@@ -87,7 +87,7 @@
 }
 
 .calculator .pi-chart .inner-input .progress{
-    width: 30%;
+    width: 50%;
     background-color: var(--color-primary);
     height: 100%;
 }
@@ -106,7 +106,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    opacity: 0.4;
+    opacity: 0;
 }
 
 
