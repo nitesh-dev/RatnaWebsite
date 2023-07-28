@@ -363,6 +363,7 @@ section {
 .about .content>div{
     position: relative;
     padding-left: 60px;
+    height: 120px;
 
 }
 .about .image-holder{
@@ -405,11 +406,7 @@ section {
 
 .retail .page{
     padding: 0 var(--page-gapping);
-    min-height: 400px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -421,25 +418,51 @@ section {
     z-index: -1;
 }
 
+.retail .content{
+    background-image: url('../images/outline/r-image2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.retail .inner-content{
+    flex-grow: 2;
+}
+
+.retail .image-holder{
+    flex-grow: 1;
+}
+
+.retail .image-holder img{
+    width: 300px;
+    display: block;
+    padding: 4px;
+    border: 2px solid white;
+}
 .retail .content *{
-    text-align: center;
+    
     color: white;
     font-weight: normal;
 }
 
-.retail .content h2{
+.retail .content h1{
     margin: 0;
 }
 
 .retail .content hr{
     border: none;
-    border-bottom: 1px solid white;
-    width: 100px;
+    border-bottom: 2px solid white;
+    width: 200px;
     opacity: 0.6;
+    margin: 0;
 }
 .retail .content button{
     display: block;
-    margin: auto;
 }
 
 
@@ -473,6 +496,37 @@ section {
     .about .content{
         margin-left: var(--page-gapping);
     }
+
+    .retail .content{
+        background-image: url('../images/outline/r-image2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .retail .content *{
+        text-align: center;
+    }
+    
+    .retail .inner-content{
+        flex-grow: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .retail .image-holder{
+        flex-grow: unset;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
